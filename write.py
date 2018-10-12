@@ -1,0 +1,6 @@
+myfile=open("test1.txt","w")
+print("Please enter a word")
+data=raw_input(">")
+print("Writing->",data)
+myfile.write("{}\n".format(data))
+myfile.close()

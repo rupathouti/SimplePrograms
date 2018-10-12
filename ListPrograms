@@ -1,0 +1,318 @@
+#Creating a List
+a = [10,20,30,40]
+#Printing List
+print(a)
+#Obtaining length of List
+l = len(a)
+#Printing length
+print(l)
+
+==============================================
+#Here printing list using while loop...
+print("Entering Python Program")
+
+a = [10,20,30,40]
+
+#Printing List
+
+i = 0
+while i < 4:
+    print(a[i])
+    i = i + 1  # can also be written as i+=1
+
+print("Leaving Python Program")
+
+
+===============================================
+# Here using len of list to configure while loop...
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+#Printing List
+
+i = 0
+while i < len(a):
+    print(a[i])
+    i = i + 1  # can also be written as i+=1
+
+print("Leaving Python Program")
+
+
+=====================================================
+# Here the values are added in list at the end...
+
+print("Entering Python Program")
+
+#Creating a List
+
+a = [10,20,30,40]
+print("List values before Appending",a)
+
+a.append(50)
+a.append(60)
+
+print("List values after Appending",a)
+
+print("Leaving Python Program")
+
+=====================================================
+
+#Here the values are added to the end of the list through list literal
+
+a = [10,20,30,40]
+print("List values before Extending",a)
+
+a.extend([50,60])
+print("List values after Extending",a)
+
+print("Leaving Python Program")
+
+================================================
+
+#Here two lists are combined through extend
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+print("List values before Extending",a)
+
+a.extend([50,60])
+print("List values after Extending via List literal",a)
+
+b = [70,80]
+print("Values in list b")
+
+a.extend(b)
+print("List values after Extending via list b",a)
+print("List b is not affected by this extention",b)
+
+print("Leaving Python Program")
+
+==================================================
+#here the value 333 is inserted at the 2nd position since the parameters given are 1 and 333(at 0th position there is 10, so in between 10 and 20 the value is inserted)
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+print("List values before insertion",a)
+
+a.insert(1,333)
+
+print("List values after insertion at index 1",a)
+
+print("Leaving Python Program")
+
+========================================================================
+
+#Here we are removing the value which we ahve inserted in before program...
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+print("List values before insertion",a)
+
+a.insert(1,333)
+
+print("List values after insertion at index 1",a)
+
+a.remove(333)
+
+print("List value after value 333 is removed",a)
+
+print("Leaving Python Program")
+
+=================================================================
+#Here we used pop, it means that removing the value...similar to remove
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+print("List values before insertion",a)
+
+a.insert(1,333)
+
+print("List values after insertion at index 1",a)
+
+a.pop(1)
+
+print("List value after value at index 1 is popped",a)
+
+print("Leaving Python Program")
+
+=========================================================================
+#Here we are inserting then popping the same value, then rightmost value we are popping...
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+print("List values before insertion",a)
+
+a.insert(1,333)
+
+print("List values after insertion at index 1",a)
+
+a.pop(1)
+
+print("List value after value at index 1 is popped",a)
+
+r = a.pop()
+
+print("The popped value is ",r)
+
+print("List after popping rightmost value is ",a)
+
+print("Leaving Python Program")
+
+==================================================================================
+#Here we are reversing the list
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40]
+
+print("List values before reversing",a)
+
+a.reverse()
+
+print("List values after reversing",a)
+
+print("Leaving Python Program")
+
+====================================================================
+
+#Here we are sorting the list, it makes the list assending order...
+
+print("Entering Python Program")
+
+#Creating a List
+a = [50,60,777,3,532,521,20,1000,4]
+
+print("List before sorting",a)
+
+#Sorting the List
+a.sort()
+
+print("List after sorting",a)
+
+print("Leaving Python Program")
+
+=========================================================
+#Similar way of sorting a float list as well
+
+print("Entering Python Program")
+
+#Creating a List
+c = [1.0,4.33,0.2,0.446,600.33,43.21]
+
+print("Float List before sorting",c)
+
+# Sorting the List
+c.sort()
+
+print("Float List after sorting",c)
+
+print("Leaving Python Program")
+
+=========================================================================
+#We also can sort alphabets in similar way
+print("Entering Python Program")
+
+#Creating a List
+b = ["z","u","q","w","v","j","t"]
+
+
+print("String List before sorting",b)
+
+# Sorting the List
+b.sort();
+
+print("String List after sorting",b)
+
+print("Leaving Python Program")
+================================================================================
+# Slicing the List by proving the limits...the upper limit is not included means in below program we mentioned as 0:5...the 5th element in the list is excluded in the output and 0 to 4 elements of the list are printed...after slicing also the list would be same and another sliced list will be created....
+
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40,50,60,70,80,90,100]
+
+print("List before slicing",a)
+
+b = a[0:5]
+
+print("Sliced List",b)
+
+print("List after slicing",a)
+
+print("Leaving Python Program")
+
+================================================================================
+#When you dont specify the upper limit, it takes till last...from third till last
+
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40,50,60,70,80,90,100]
+
+print("List before slicing",a)
+
+# Slicing the List
+b = a[3:]
+
+print("Sliced List",b)
+
+print("List after slicing",a)
+
+print("Leaving Python Program")
+
+===============================================================================
+#When you specifies the upper limit, then it prints the 0 to 6 elements of the list...
+
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40,50,60,70,80,90,100]
+
+print("List before slicing",a)
+
+# Slicing the List
+b = a[:7]
+
+print("Sliced List",b)
+
+print("List after slicing",a)
+
+print("Leaving Python Program")
+
+=================================================================================
+#If you dont specifies the upper and lower limit then it prints the whole list as sliced list...
+print("Entering Python Program")
+
+#Creating a List
+a = [10,20,30,40,50,60,70,80,90,100]
+
+print("List before slicing",a)
+
+# Slicing the List
+b = a[:]
+
+print("Sliced List",b)
+
+print("List after slicing",a)
+
+print("Leaving Python Program")
